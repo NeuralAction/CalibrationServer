@@ -14,4 +14,4 @@ def upload_train():
             print(file)
     return {}, 200
 
-app.run(port=5000, host='0.0.0.0', debug=True, threaded=True)
+app.run(port=5000, host='0.0.0.0', threaded=True)

@@ -12,7 +12,7 @@ def upload_data():
     for file in uploaded_files:
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
             print(file)
-    return {}, 200
+    return {"message": "Upload complete"}, 200
 
 @app.route('/test', methods=['POST'])
 def test():
